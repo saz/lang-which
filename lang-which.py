@@ -1,5 +1,6 @@
 from wsgiservice import Resource, get_app, mount, validate
 from guess_language import guess_language
+import sys
 
 
 @mount('/')
@@ -28,4 +29,7 @@ if __name__ == '__main__':
     from wsgiref.simple_server import make_server
     port = 8080
     print 'Listening on port {p}'.format(p=port)
-    make_server('', port, app).serve_forever()
+    try:
+        make_server('', port, app).serve_forever()
+    except KeyboardInterrupt:
+        sys.exit()
