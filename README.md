@@ -22,12 +22,12 @@ Usage
 
 2. POSTing some data
 ```
-    curl -d text=Hello+World%3F http://localhost:8080
+    curl -d text=Hello+World%3F -H "Accept: application/json" http://localhost:8080
 ```
 
 ### Sample Response
 ```
-    saz@serenity:~$ curl -d text=Hello+World%3F http://localhost:8080
+    saz@serenity:~$ curl -d text=Hello+World%3F -H "Accept: application/json" http://localhost:8080
     {"language": "en"}
     saz@serenity:~$
 ```
