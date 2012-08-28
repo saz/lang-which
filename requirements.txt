@@ -1,0 +1,8 @@
+WebOb==1.2.2
+WsgiService==0.3
+argparse==1.2.1
+decorator==3.3.3
+distribute==0.6.24
+guess-language-spirit==0.5a1
+pyenchant==1.6.5
+wsgiref==0.1.2
