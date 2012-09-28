@@ -10,7 +10,7 @@ Installation
 1. git clone git://github.com/saz/lang-which.git
 2. cd lang-which
 3. mkvirtualenv lang-which
-4. pip -r requirements.txt
+4. pip install -r requirements.txt
 
 Usage
 -----
